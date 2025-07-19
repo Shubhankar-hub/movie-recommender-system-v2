@@ -108,7 +108,7 @@ TMDB_API_KEY=your_api_key
 
 **Shubhankar Banerjee**  
 📧 [shubhankarbanerjee0707@gmail.com](mailto:shubhankarbanerjee0707@gmail.com)  
-🔗 [GitHub](https://github.com/Shubhankar-hub) | [LinkedIn](https://www.linkedin.com/in/shubhankarbanerjee/)
+🔗 [GitHub](https://github.com/Shubhankar-hub) | [LinkedIn](https://www.linkedin.com/in/shubhankar-banerjee-78740b258/)
 
 ---
 
