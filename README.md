@@ -1,51 +1,131 @@
-# 🎬 Movie Recommender System
+# 🎬 Movie Recommender System with Streamlit + TMDB API
 
-This is a content-based movie recommendation system built using Python, Streamlit, and The Movie Database (TMDb) API. It uses movie overviews and metadata to suggest similar movies based on your input.
-
-## 🚀 Live Demo
-
-👉 [Check the live app here](https://your-render-app-url.onrender.com)  
-*(Replace with your actual deployed URL)*
+A powerful and visually appealing Movie Recommender App built using **Python**, **Streamlit**, and **TMDb API**. It helps users discover similar movies based on their selection — with real-time poster visuals!
 
 ---
 
-## 🧠 How it Works
+## 🚀 Demo
 
-- Vectorizes movie descriptions using **TF-IDF**.
-- Computes **cosine similarity** between movies.
-- Recommends 5 similar movies with posters.
-- Posters and metadata are fetched using the **TMDb API**.
+🌐 Deployed Link: https://movie-recommender-system-v2-ov9j.onrender.com
+📸 Preview:
 
----
+<img width="1708" height="833" alt="image" src="https://github.com/user-attachments/assets/f3d613ae-8ac6-49f6-b80f-9fab7ca09fca" />
 
-## 📦 Features
-
-- Search and select any movie from the dataset.
-- Instantly get 5 movie recommendations.
-- View poster, title, and overview for each suggestion.
-- Responsive and clean Streamlit UI.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Python**
-- **Pandas**, **Scikit-Learn**
-- **Streamlit**
-- **TMDb API**
-- **Pickle** for storing similarity matrix
+| Tool / Library | Purpose                          |
+|----------------|----------------------------------|
+| Streamlit      | Web Interface                    |
+| Pandas         | Data handling                    |
+| NumPy          | Numerical operations             |
+| Pickle         | Load model and similarity data   |
+| Requests       | Fetch posters from TMDb API      |
 
 ---
 
-## 📁 Files and Structure
-```movie-recommender-system/
-├── app.py                 # Streamlit web app script
-├── movie-recommender-system.ipynb  # Jupyter notebook used for model development
-├── movies_dict.pkl        # Pickled dictionary of movie data (title, id, overview)
-├── similarity.pkl         # Pickled cosine similarity matrix
-├── requirements.txt       # List of required Python libraries
-├── Procfile               # Tells Render how to run the app
-├── setup.sh               # Shell script to setup environment for deployment
-├── .gitignore             # Git ignored files list
-├── .gitattributes         # Git file attribute settings
-└── README.md              # Project documentation (this file!)```
+## 🧠 Features
+
+- 🔍 **Search by Movie Title**
+- 🎞️ **Fetch Posters using TMDB API**
+- 🤖 **Recommendation Engine with Cosine Similarity**
+- ⚡ Fast & Lightweight UI using **Streamlit**
+- 💾 Preprocessed `.pkl` files for instant loading
+- ☁️ Deployed seamlessly on **Render**
+
+---
+
+## 🛠️ Getting Started
+
+### ✅ Prerequisites
+
+- Python 3.9+
+- `pip` package manager
+- TMDb API Key (Free from [TMDb](https://www.themoviedb.org/))
+
+---
+
+### ⚙️ Installation
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name```
+
+2. **Install Dependencies**
+```pip install -r requirements.txt```
+
+3. **Add Environment Variables**
+```TMDB_API_KEY=your_tmdb_api_key_here```
+
+4. **Run the App Locally**
+```streamlit run app.py
+```
+
+### 📁 Project Structure
+
+```
+├── app.py
+├── movies.pkl
+├── similarity.pkl
+├── requirements.txt
+└── README.md
+```
+
+### 🌐 Deployment (Render)
+
+1. Push your code to GitHub
+
+2. Create a new Web Service on Render
+
+3. Set Build Command to:
+```pip install -r requirements.txt
+```
+4. Set Start Command to:
+```streamlit run app.py --server.port=10000 --server.enableCORS=false
+```
+5. Add environment variable:
+```TMDB_API_KEY=your_api_key
+```
+
+:
+
+## 👨‍💻 Developer
+
+**Shubhankar Banerjee**  
+📧 [shubhankarbanerjee0707@gmail.com](mailto:shubhankarbanerjee0707@gmail.com)  
+🔗 [GitHub](https://github.com/Shubhankar-hub) | [LinkedIn](https://www.linkedin.com/in/shubhankarbanerjee/)
+
+---
+
+## 📷 API Reference: TMDB
+
+Using TMDB’s API to fetch high-resolution movie posters and metadata.  
+🔗 [TMDb API Docs](https://developer.themoviedb.org/)
+
+---
+
+## 🙌 Acknowledgements
+
+- **Streamlit** – for the interactive frontend  
+- **The Movie Database (TMDb)** – for providing metadata and poster images  
+- **Scikit-learn** – for machine learning models  
+
+---
+
+## ⭐ Contribute
+
+Contributions, issues and feature requests are welcome!  
+Feel free to check the [issues page](https://github.com/Shubhankar-hub/movie-recommender-system-v2/issues)).
+
+---
+
+## 📜 License
+
+Distributed under the **MIT License**.  
+See [`LICENSE`](./LICENSE) for more information.
+
+
