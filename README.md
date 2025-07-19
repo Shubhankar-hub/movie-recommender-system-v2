@@ -6,7 +6,7 @@ A powerful and visually appealing Movie Recommender App built using **Python**, 
 
 ## 🚀 Demo
 
-🌐 Deployed Link: https://movie-recommender-system-v2-ov9j.onrender.com
+🌐 Deployed Link: https://movie-recommender-system-v2-dmdm5xzbvr45krbkufaysc.streamlit.app/
 
 
 📸 Preview:
