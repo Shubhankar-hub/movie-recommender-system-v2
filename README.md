@@ -7,9 +7,11 @@ A powerful and visually appealing Movie Recommender App built using **Python**, 
 ## 🚀 Demo
 
 🌐 Deployed Link: https://movie-recommender-system-v2-ov9j.onrender.com
+
+
 📸 Preview:
 
-<img width="1708" height="833" alt="image" src="https://github.com/user-attachments/assets/f3d613ae-8ac6-49f6-b80f-9fab7ca09fca" />
+<div align="center"> <img src="https://github.com/user-attachments/assets/31d02b1b-cb32-4e6c-9f38-5261d5a604cb" width="47%" alt="Movie App UI" /> <img src="https://github.com/user-attachments/assets/f3d613ae-8ac6-49f6-b80f-9fab7ca09fca" width="47%" alt="Recommendation Results" /> </div>
 
 
 ---
@@ -53,16 +55,22 @@ A powerful and visually appealing Movie Recommender App built using **Python**, 
 
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name```
+cd your-repo-name
+```
 
 2. **Install Dependencies**
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
-3. **Add Environment Variables**
-```TMDB_API_KEY=your_tmdb_api_key_here```
+4. **Add Environment Variables**
+```
+TMDB_API_KEY=your_tmdb_api_key_here
+```
 
-4. **Run the App Locally**
-```streamlit run app.py
+6. **Run the App Locally**
+```
+streamlit run app.py
 ```
 
 ### 📁 Project Structure
@@ -82,13 +90,16 @@ cd your-repo-name```
 2. Create a new Web Service on Render
 
 3. Set Build Command to:
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
 4. Set Start Command to:
-```streamlit run app.py --server.port=10000 --server.enableCORS=false
+```
+streamlit run app.py --server.port=10000 --server.enableCORS=false
 ```
 5. Add environment variable:
-```TMDB_API_KEY=your_api_key
+```
+TMDB_API_KEY=your_api_key
 ```
 
 :
