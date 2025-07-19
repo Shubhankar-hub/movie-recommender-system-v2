@@ -1,67 +1,51 @@
-<h1 align="center">🎬 Movie Recommender System</h1>
+# 🎬 Movie Recommender System
 
-<p align="center">
-  A content-based recommendation engine built with <b>Streamlit</b>, <b>Python</b>, and the <b>TMDb API</b>.<br>
-  Discover movies similar to your favorites instantly.
-</p>
-
-<p align="center">
-  <a href="https://movie-recommender-system-v2-ov9j.onrender.com/" target="_blank">
-    <img alt="Live App" src="https://img.shields.io/badge/Try%20it%20Live-Streamlit%20App-brightgreen?style=for-the-badge&logo=streamlit">
-  </a>
-  <a href="https://github.com/Shubhankar-hub/movie-recommender-system" target="_blank">
-    <img alt="GitHub" src="https://img.shields.io/github/stars/Shubhankar-hub/movie-recommender-system?style=for-the-badge">
-  </a>
-</p>
-
----
+This is a content-based movie recommendation system built using Python, Streamlit, and The Movie Database (TMDb) API. It uses movie overviews and metadata to suggest similar movies based on your input.
 
 ## 🚀 Live Demo
 
-> Click below to launch the app:
-
-👉 **[Movie Recommender System (Streamlit Web App)](https://movie-recommender-system-v2-ov9j.onrender.com/)**
-
----
-
-## 🎯 Features
-
-✅ Recommend similar movies using content-based filtering  
-✅ Fetch movie posters via TMDb API  
-✅ Lightweight and fast — powered by precomputed similarity matrix  
-✅ Intuitive UI with dropdown search and image-based results  
+👉 [Check the live app here](https://your-render-app-url.onrender.com)  
+*(Replace with your actual deployed URL)*
 
 ---
 
-## 🧠 How It Works
+## 🧠 How it Works
 
-1. User selects a movie title
-2. System finds similar movies using **cosine similarity**
-3. Top 5 recommended movies are shown with their posters
-
-![demo](https://via.placeholder.com/900x450.png?text=Insert+your+app+screenshot+or+GIF+here)
-
----
-
-## 🛠 Tech Stack
-
-| Technology     | Purpose                                 |
-|----------------|------------------------------------------|
-| **Streamlit**  | Web app framework                        |
-| **pandas**     | Data manipulation                        |
-| **NumPy**      | Vector operations                        |
-| **Pickle**     | Load model/similarity matrix             |
-| **TMDb API**   | Fetch movie posters and details          |
-| **Python**     | Core programming language                |
+- Vectorizes movie descriptions using **TF-IDF**.
+- Computes **cosine similarity** between movies.
+- Recommends 5 similar movies with posters.
+- Posters and metadata are fetched using the **TMDb API**.
 
 ---
 
-## 🧪 Local Setup
+## 📦 Features
 
-### 🔧 Installation
+- Search and select any movie from the dataset.
+- Instantly get 5 movie recommendations.
+- View poster, title, and overview for each suggestion.
+- Responsive and clean Streamlit UI.
 
-```bash
-git clone https://github.com/Shubhankar-hub/movie-recommender-system.git
-cd movie-recommender-system
-pip install -r requirements.txt
-streamlit run app.py
+---
+
+## 🛠️ Tech Stack
+
+- **Python**
+- **Pandas**, **Scikit-Learn**
+- **Streamlit**
+- **TMDb API**
+- **Pickle** for storing similarity matrix
+
+---
+
+## 📁 Files and Structure
+movie-recommender-system/
+├── app.py                 # Streamlit web app script
+├── movie-recommender-system.ipynb  # Jupyter notebook used for model development
+├── movies_dict.pkl        # Pickled dictionary of movie data (title, id, overview)
+├── similarity.pkl         # Pickled cosine similarity matrix
+├── requirements.txt       # List of required Python libraries
+├── Procfile               # Tells Render how to run the app
+├── setup.sh               # Shell script to setup environment for deployment
+├── .gitignore             # Git ignored files list
+├── .gitattributes         # Git file attribute settings
+└── README.md              # Project documentation (this file!)
