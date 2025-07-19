@@ -38,7 +38,7 @@ This is a content-based movie recommendation system built using Python, Streamli
 ---
 
 ## 📁 Files and Structure
-movie-recommender-system/
+```movie-recommender-system/
 ├── app.py                 # Streamlit web app script
 ├── movie-recommender-system.ipynb  # Jupyter notebook used for model development
 ├── movies_dict.pkl        # Pickled dictionary of movie data (title, id, overview)
@@ -48,4 +48,4 @@ movie-recommender-system/
 ├── setup.sh               # Shell script to setup environment for deployment
 ├── .gitignore             # Git ignored files list
 ├── .gitattributes         # Git file attribute settings
-└── README.md              # Project documentation (this file!)
+└── README.md              # Project documentation (this file!)```
